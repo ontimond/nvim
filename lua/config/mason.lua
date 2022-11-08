@@ -1,7 +1,5 @@
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 local saga = require('lspsaga')
-local keymap = vim.keymap.set
-
 
 saga.init_lsp_saga()
 
@@ -47,20 +45,5 @@ require("mason-lspconfig").setup_handlers {
       on_attach = on_attach,
       capabilities = capabilities
     }
-  end,
-
-  ["sumneko_lua"] = function()
-    require("lspconfig")["sumneko_lua"].setup {
-      on_attach = on_attach,
-      capabilities = capabilities,
-      settings = {
-        Lua = {
-          diagnostics = {
-            globals = { 'vim' }
-          }
-        }
-      }
-    }
   end
-
 }

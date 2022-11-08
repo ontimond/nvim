@@ -116,6 +116,11 @@ _G.packer_plugins = {
     path = "/Users/ontimond/.local/share/nvim/site/pack/packer/opt/copilot.lua",
     url = "https://github.com/zbirenbaum/copilot.lua"
   },
+  ["github-nvim-theme"] = {
+    loaded = true,
+    path = "/Users/ontimond/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
+    url = "https://github.com/projekt0n/github-nvim-theme"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/Users/ontimond/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",

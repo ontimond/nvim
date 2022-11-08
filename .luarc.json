@@ -3,6 +3,11 @@
     "Lua.diagnostics.globals": [
         "vim",
         "packer_bootstrap",
-        "packer_installed"
+        "packer_installed",
+        "dark_theme",
+        "light_theme",
+        "keymap",
+        "packer_install_path",
+        "fn"
     ]
 }

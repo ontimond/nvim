@@ -1,3 +1,20 @@
+local fn = vim.fn
+local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
+
+-- Ensure Packer manager is installed
+-- if not install it
+local ensure_packer = function()
+  if not packer_installed then
+    fn.system({ "git", "clone", "--depth", "1", "https://github.com/wbthomason/packer.nvim", install_path })
+    vim.cmd([[packadd packer.nvim]])
+    return true
+  end
+  return false
+end
+
+-- Packer manager bootstrap
+local packer_bootstrap = ensure_packer()
+
 vim.cmd([[packadd packer.nvim]])
 
 return require("packer").startup(function(use)
@@ -44,10 +61,14 @@ return require("packer").startup(function(use)
 
   -- Null LS: Bridge between LSP and custom formatters like prettier
   use("jose-elias-alvarez/null-ls.nvim")
-  use ({
+
+  -- Themes
+  use({
     "catppuccin/nvim",
     as = "catppuccin"
   })
+  use({ 'projekt0n/github-nvim-theme' })
+
 
   -- Auto Dark Mode: Automatically switch between light and dark mode based on Mac OS Mode
   use("f-person/auto-dark-mode.nvim")

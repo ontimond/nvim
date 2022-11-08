@@ -1,10 +1,12 @@
-require("config.packer-bootstrap")
+require("config.global")
 
 if packer_installed then
   require("config.base")
-  require("config.auto-dark-mode")
   require('config.catppuccin')
-  require("config.lsp")
+  require('config.github-theme')
+  require("config.auto-dark-mode")
+  require("config.lsp-saga")
+  require("config.mason")
   require("config.cmp")
   require("config.copilot")
   require("config.telescope")
