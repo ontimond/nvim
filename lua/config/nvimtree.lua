@@ -17,11 +17,11 @@ vim.keymap.set("n", "<leader>o", ":NvimTreeFindFile<CR>", { silent = true })
 vim.keymap.set("n", "<leader>t", ":NvimTreeToggle<CR>", { silent = true })
 vim.keymap.set("n", "<leader>f", ":NvimTreeFocus<CR>", { silent = true })
 
+-- Background transparent
+vim.cmd("autocmd Colorscheme * highlight NvimTreeNormal guibg=NONE")
+
 -- Close nvim if the only window left is the nvim-tree
 vim.cmd([[autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif]])
- -- vim.cmd("hi NvimTreeNormal guibg=transparent")
--- vim.api.nvim_set_hl("NvimTreeNormal", "Normal", {})
-vim.cmd("autocmd Colorscheme * highlight NvimTreeNormal guibg=transparent")
 vim.api.nvim_create_autocmd("BufEnter", {
   nested = true,
   callback = function()

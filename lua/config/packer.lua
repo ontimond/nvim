@@ -54,10 +54,18 @@ return require("packer").startup(function(use)
   use("lewis6991/gitsigns.nvim")
 
   -- Nvim Tree: File explorer
-  use("nvim-tree/nvim-tree.lua")
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional, for file icons
+    }
+  }
 
   -- Lualine: Status line
-  use("nvim-lualine/lualine.nvim")
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 
   -- Null LS: Bridge between LSP and custom formatters like prettier
   use("jose-elias-alvarez/null-ls.nvim")
@@ -69,9 +77,10 @@ return require("packer").startup(function(use)
   })
   use({ 'projekt0n/github-nvim-theme' })
 
-
   -- Auto Dark Mode: Automatically switch between light and dark mode based on Mac OS Mode
   use("f-person/auto-dark-mode.nvim")
+
+  use "lukas-reineke/indent-blankline.nvim"
 
 
   -- Automatically set up your configuration after cloning packer.nvim

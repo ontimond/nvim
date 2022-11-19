@@ -126,6 +126,11 @@ _G.packer_plugins = {
     path = "/Users/ontimond/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["indent-blankline.nvim"] = {
+    loaded = true,
+    path = "/Users/ontimond/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
+    url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
   ["lspkind.nvim"] = {
     loaded = true,
     path = "/Users/ontimond/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
@@ -170,6 +175,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/ontimond/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/nvim-tree/nvim-tree.lua"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/Users/ontimond/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
