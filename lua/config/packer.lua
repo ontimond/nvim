@@ -76,11 +76,13 @@ return require("packer").startup(function(use)
     as = "catppuccin"
   })
   use({ 'projekt0n/github-nvim-theme' })
+  use 'navarasu/onedark.nvim'
 
   -- Auto Dark Mode: Automatically switch between light and dark mode based on Mac OS Mode
   use("f-person/auto-dark-mode.nvim")
 
   use "lukas-reineke/indent-blankline.nvim"
+
 
 
   -- Automatically set up your configuration after cloning packer.nvim

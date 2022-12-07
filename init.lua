@@ -4,6 +4,7 @@ if packer_installed then
   require("config.base")
   require('config.catppuccin')
   require('config.github-theme')
+  require('config.onedark')
   require("config.auto-dark-mode")
   require("config.lsp-saga")
   require("config.mason")
