@@ -82,6 +82,7 @@ return require("packer").startup(function(use)
   use("f-person/auto-dark-mode.nvim")
 
   use "lukas-reineke/indent-blankline.nvim"
+  use("jose-elias-alvarez/typescript.nvim")
 
 
 
