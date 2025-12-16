@@ -2,4 +2,4 @@ require("config.lazy")
 
 vim.opt.relativenumber = true
 vim.g.mapleader = " "
-vim.cmd.colorscheme("shine")
+vim.cmd.colorscheme("lunaperche")
